@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 10px;
+            height: 100vh;
+            padding: 10px;
+            background-color: #3b70b3;
+        }
+
+        .left {
+            grid-row: span 2; /* Membuat elemen ini memanjang di dua baris */
+            background-color: #e68241;
+            border: 2px solid #2d4786;
+        }
+
+        .top-right, .bottom-right {
+            background-color: #e68241;
+            border: 2px solid #2d4786;
+        }
+
+        .top-right {
+            grid-column: 2;
+            grid-row: 1;
+        }
+
+        .bottom-right {
+            grid-column: 2;
+            grid-row: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">Left Side</div>
+        <div class="top-right">Top Right</div>
+        <div class="bottom-right">Bottom Right</div>
+    </div>
+</body>
+</html>

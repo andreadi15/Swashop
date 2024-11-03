@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *,html,body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: #333;
+            width: 100%;
+            height: auto;
+        }
+        nav{
+            height: 40px;
+            width: 100%;
+            background-color: #444;
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+        }
+        .content-container{
+            display: flex;
+            margin-top: 20px;
+            justify-self: center;
+            justify-content: center;
+            height: auto;
+            width: 80%;
+            border: 2px solid red;
+        }
+        .side-content{
+            margin-right:20px ;
+            width: 30%;
+            border:2px solid green;
+        }
+        .content{
+            width: 60%;
+            border: 2px solid blue;
+        }
+        .step-1{
+            width: 100%;
+            height: 200px;
+            border: 2px solid orange;
+        }
+        .product{
+            margin-top: 15px;
+            width: 100%;
+            height: auto;
+            border: 2px solid greenyellow;
+        }
+        h1{
+            font-size: 2em;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #id-game{
+            height: 24px;
+            width: 200px;
+            padding-left: 10px;
+            border-radius: 6px;
+            outline: none;
+        }
+        .title{
+            height: 35px;
+            border: 2px solid aqua;
+            display: flex;
+            color: white;
+            
+        }
+        .title-num{
+            text-align: center;
+            padding-top:  5px;
+            width: 35px;
+            height: 100%;
+            border: 2px solid cyan;
+        }
+        .title-text{
+            text-align: center;
+            padding-top: 7px;
+            padding-left: 10px;
+
+        }
+        .form{
+            height: 90px;
+            border: 2px solid tomato;
+            display: flex;
+            align-items: center;
+        }
+        h3{
+            color: white;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .input-id{
+            margin-left: 10px;
+        }
+        .input-server{
+            margin-left: 90px;
+        }
+        .deskripsi{
+            padding-left: 7px;
+            border: 2px solid magenta;
+        }
+        .profile-picture{
+            width: 150px;
+            height: 150px;
+            background: #222 url(MobileLegendLogo.png) no-repeat;
+            background-size: cover;
+            margin: 0 auto;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+        .list-item{
+            width: 95%;
+            height: auto;
+            margin: 0 auto;
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(160px,1fr));
+            gap: 12px;
+            justify-items: center;
+
+            
+        }
+        .item{
+            width: 160px;
+            height: 65px;
+            border: 2px solid brown;
+            border-radius: 10px;
+            display:grid;
+            grid-template-columns:1fr 2fr;
+            grid-template-rows:1fr 1fr;
+            padding: 8px;
+            cursor: pointer;
+        }
+        .dm-img,.bottom-right,.top-right{
+            margin-top: -5px;
+        }
+        .dm-img{
+            grid-row: 1;
+            grid-column: 1;
+            grid-row: span 2;
+            display: flex;
+            align-items: center;
+        }
+        .dm-img img{
+            height:30px;
+            width:30px;
+        }
+        .top-right{
+            width: 90px;
+            height:30px;
+            grid-row: 1;
+            grid-column: 2;
+        }
+        .bottom-right{
+            width: 90px;
+            height:30px;
+            grid-row: 2;
+            grid-column: 2;
+        }
+        .top-right p{
+            margin-top: 13px;
+        }
+        .bottom-right p{
+            padding-bottom: 80px;
+        }
+
+        .item p{
+            font-size: .55em;
+            padding: 3px; 
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        } 
+        .tag{
+            height: 20px;
+            width: 80px;
+            display: grid;
+            grid-template-columns: 1fr 1f;
+        }
+        .tag img{
+            height: 100%;
+            width: 20px;      
+            grid-column: 1;      
+        }
+        .tag p{
+            color: white;
+            text-align: center;
+            font-size: 13px;
+            grid-column: 2;
+            margin-left: -20px;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav></nav>
+        <div class="content-container">
+            <div class="side-content">
+                <div class="profil">
+                    <div class="profile-picture"></div>
+                    <div style="text-align:center;color:white;margin-top:10px;">
+                        <p>Mobile Legend: Bang Bang</p>
+                        <p>Montoon</p>
+                    </div>
+                    <div style="display: flex;justify-self:center;margin-top:10px">
+                        <div class="tag">
+                            <img src="Picture2.png" alt="" style="filter: brightness(0) saturate(100%) invert(75%) sepia(48%) saturate(630%) hue-rotate(24deg) brightness(113%) contrast(109%);">
+                            <p style="margin-right:10px;margin-top:3px">Aman</p>       
+                        </div>
+                        <div class="tag">
+                            <img src="picture4.png" alt="" style="filter: brightness(0) saturate(100%) invert(31%) sepia(78%) saturate(3304%) hue-rotate(209deg) brightness(96%) contrast(98%);">
+                            <p style="margin-right: 10px;margin-top:3px">Cepat</p>
+                        </div>
+                        <div class="tag">
+                            <img src="Picture1.png" alt="" style="filter: brightness(0) saturate(100%) invert(11%) sepia(93%) saturate(5654%) hue-rotate(4deg) brightness(87%) contrast(110%);">
+                            <p style="margin-left:10px;margin-top:3px">Terpercaya</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="steo-1">
+                    <div class="title">
+                        <div class="title-num">1</div>
+                        <div class="title-text">Masukkan data Akun</div>
+                    </div>
+                    <div class="form">
+                        <!-- <h1>Top Up Diamond Mobile Legend</h1>
+                        <p>Silahkan masukkan ID Game dan ID Server</p> -->
+                        <div class="input-id">
+                            <h3>ID:</h3>
+                            <input type="text" id="id-game" placeholder="Masukkan ID">
+                        </div>
+                        <div class="input-server">
+                            <h3>Server:</h3>
+                            <input type="text" id="id-game" placeholder="Masukkan Server">
+                        </div>
+                    </div>
+                    <div class="deskripsi">
+                        <pre style="color:white;font-family:Verdana, Geneva, Tahoma, sans-serif;font-size: 12px;font-style:italic">Masukkan ID Game dan Server Game yang ada di Profil Utama
+Contoh: 123456789(9876) maka id game adalah 123456789 dan server game 9876
+                        </pre>
+                    </div>
+                </div>
+                <div class="product">
+                    <div style="width: 75px;height: 30px;color:white;font-size: 14px;border:2px solid purple;text-align:center;margin-top:15px;margin-left:20px;padding-top:5px;background-color: #777;cursor:pointer;border-radius:8px">Diamond</div>
+                    <div class="list-item">
+                        <div class="item">
+                            <div class="dm-img">
+                                <img src="dm.webp" alt="">
+                            </div>
+                            <div class="top-right">
+                                <p> 5 (5+0) Diamonds</p>
+                            </div>
+                            <div class="bottom-right">
+                                <p> Rp 1.500</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="dm-img">
+                                <img src="dm.webp" alt="">
+                            </div>
+                            <div class="top-right">
+                                <p> 5 (5+0) Diamonds</p>
+                            </div>
+                            <div class="bottom-right">
+                                <p> Rp 1.500</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="dm-img">
+                                <img src="dm.webp" alt="">
+                            </div>
+                            <div class="top-right">
+                                <p> 5 (5+0) Diamonds</p>
+                            </div>
+                            <div class="bottom-right">
+                                <p> Rp 1.500</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="dm-img">
+                                <img src="dm.webp" alt="">
+                            </div>
+                            <div class="top-right">
+                                <p> 5 (5+0) Diamonds</p>
+                            </div>
+                            <div class="bottom-right">
+                                <p> Rp 1.500</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="dm-img">
+                                <img src="dm.webp" alt="">
+                            </div>
+                            <div class="top-right">
+                                <p> 5 (5+0) Diamonds</p>
+                            </div>
+                            <div class="bottom-right">
+                                <p> Rp 1.500</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="dm-img">
+                                <img src="dm.webp" alt="">
+                            </div>
+                            <div class="top-right">
+                                <p> 5 (5+0) Diamonds</p>
+                            </div>
+                            <div class="bottom-right">
+                                <p> Rp 1.500</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="dm-img">
+                                <img src="dm.webp" alt="">
+                            </div>
+                            <div class="top-right">
+                                <p> 5 (5+0) Diamonds</p>
+                            </div>
+                            <div class="bottom-right">
+                                <p> Rp 1.500</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="dm-img">
+                                <img src="dm.webp" alt="">
+                            </div>
+                            <div class="top-right">
+                                <p> 5 (5+0) Diamonds</p>
+                            </div>
+                            <div class="bottom-right">
+                                <p> Rp 1.500</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="dm-img">
+                                <img src="dm.webp" alt="">
+                            </div>
+                            <div class="top-right">
+                                <p> 5 (5+0) Diamonds</p>
+                            </div>
+                            <div class="bottom-right">
+                                <p> Rp 1.500</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="dm-img">
+                                <img src="dm.webp" alt="">
+                            </div>
+                            <div class="top-right">
+                                <p> 5 (5+0) Diamonds</p>
+                            </div>
+                            <div class="bottom-right">
+                                <p> Rp 1.500</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
